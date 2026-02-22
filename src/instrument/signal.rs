@@ -14,7 +14,3 @@ pub struct OscSignal {
     pub pw: Option<ModParam>,
 }
 
-pub struct Oscillator{
-    pub offset_tune: ModParam,
-    pub signals: HashMap<Wave, OscSignal>
-}

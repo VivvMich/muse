@@ -1,5 +1,5 @@
 use std::collections::HashMap;
-use crate::instrument::signal::{Oscillator};
+use crate::instrument::oscilator::Oscillator;
 use crate::instrument::filter::{FilterType};
 use crate::instrument::filter::Filter;
 // ALL COMMAND
