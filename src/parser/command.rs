@@ -1,5 +1,7 @@
 use std::collections::HashMap;
-use crate::instrument::signal::{Wave, OscSignal};
+use crate::instrument::signal::{Oscillator};
+use crate::instrument::filter::{FilterType};
+use crate::instrument::filter::Filter;
 // ALL COMMAND
 
 // MAIN COMMAND
@@ -13,13 +15,11 @@ pub enum Command {
     EXIT,
 }
 
+
 pub enum SynthModule {
-    Oscillator{
-        offset_tune: f32,
-        signals: HashMap<Wave, OscSignal>
-    },
+    Oscillator(Oscillator),
+    Filter(Filter),
+    Envelope,
     LFO,
-    Filter,
     Effect,
-    Envelope
 }
